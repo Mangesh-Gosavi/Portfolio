@@ -46,6 +46,7 @@ function Contact() {
 
       const result = await response.json();
       console.log("Response from server:", result);
+      location.reload()
     } catch (error) {
       console.error("Error during fetch:", error);
     }
