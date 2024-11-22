@@ -11,7 +11,7 @@ function Contact() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/users", {
+        const response = await fetch("https://portfolioserver-1yf2.onrender.com/users", {
           method: "GET",
           headers: {
             "Accept": "application/json",
@@ -32,7 +32,7 @@ function Contact() {
   const onSubmitHandler = async (formData) => {
     console.log(formData);
     try {
-      const response = await fetch("http://localhost:3000/", {
+      const response = await fetch("https://portfolioserver-1yf2.onrender.com/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
