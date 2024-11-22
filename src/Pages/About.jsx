@@ -1,6 +1,17 @@
 import img from '../assets/mangesh.jpeg';
 
 function About() {
+
+  const onButtonClick = () => {
+    const pdfUrl = "Sample.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = img; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
+
   return (
     <main className="flex flex-col md:flex-row items-center justify-center bg-blue-950 text-white p-10 gap-8 min-h-screen">
       <img
@@ -26,7 +37,7 @@ function About() {
         </p>
 
         <div className="mt-6">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow transition duration-300">
+          <button  onClick={onButtonClick} className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow transition duration-300">
             Download CV
           </button>
         </div>
