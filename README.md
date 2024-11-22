@@ -1,1 +1,1 @@
-Live Portfolio: https://portfolio-ccd60vwin-gosavimangesh0-gmailcoms-projects.vercel.app/
+Live Portfolio: myportfolio-black-theta.vercel.app
