@@ -6,7 +6,7 @@ function About() {
     const pdfUrl = "Sample.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = img; 
+    link.download = "document.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
