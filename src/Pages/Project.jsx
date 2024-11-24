@@ -38,7 +38,7 @@ function Project() {
           <Link to=''><img
             className="w-60 h-60 md:w-96 md:h-96 rounded-lg shadow-lg hover:scale-110 transition duration-1000"
             src={proj7}
-            alt="Project 7 Loading"
+            alt="Project 5 Loading"
           /></Link>
           <Link to=''><img
             className="w-60 h-60 md:w-96 md:h-96 rounded-lg shadow-lg hover:scale-110 transition duration-1000"
@@ -48,7 +48,7 @@ function Project() {
           <Link to='https://weatherforecast-rosy-chi.vercel.app/'><img
             className="w-60 h-60 md:w-96 md:h-96 rounded-lg shadow-lg hover:scale-110 transition duration-1000"
             src={proj4}
-            alt="Project 4 Loading"
+            alt="Project 7 Loading"
           /></Link>
 
         </div>
