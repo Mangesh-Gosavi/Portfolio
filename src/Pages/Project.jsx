@@ -30,7 +30,7 @@ function Project() {
             src={proj3}
             alt="Project 3 Loading"
           /></Link>
-          <Link to='https://auctions-ojqc.onrender.com/'><img
+          <Link to='https://auctions-cu2m.onrender.com'><img
             className="w-60 h-60 md:w-96 md:h-96 rounded-lg shadow-lg hover:scale-110 transition duration-1000"
             src={proj5}
             alt="Project 4 Loading"
