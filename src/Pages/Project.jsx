@@ -13,7 +13,7 @@ function Project() {
     <>
       <main className="flex flex-col items-center justify-center bg-blue-950 text-white p-10 gap-8 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 ">
-          <Link to=''><img
+          <Link to='https://blockchain-supplychain.vercel.app/'><img
             className="w-60 h-60 md:w-96 md:h-96 rounded-lg shadow-lg hover:scale-110 transition duration-1000"
             src={proj1}
             alt="Project 1 Loading"
