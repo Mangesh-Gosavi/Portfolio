@@ -1,16 +1,16 @@
 import img from '../assets/mangesh.jpeg';
+import resume from "../assets/MangeshGosavi.pdf";
 
 function About() {
 
   const onButtonClick = () => {
-    const pdfUrl = "Sample.pdf";
     const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "document.pdf"; 
+    link.href = resume; 
+    link.download = "MangeshGosavi_Resume.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-};
+  };
 
   return (
     <main className="flex flex-col md:flex-row items-center justify-center bg-blue-950 text-white p-10 gap-8 min-h-screen">
