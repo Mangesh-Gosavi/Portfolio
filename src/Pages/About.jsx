@@ -32,7 +32,7 @@ function About() {
           Figma, and many others in the web ecosystem.
         </p>
         <p className="text-sm leading-6 mt-4">
-          I love programming, design, and user interfaces—my true passions. Beyond work, I was a national-level 
+          I am interested in programming, design, and user interfaces—my true passions. Beyond work, I was a national-level 
           sports player in Handball. Currently, I'm working on a MERN project and diving into ML for automation.
         </p>
 
