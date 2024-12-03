@@ -5,8 +5,6 @@ import proj4 from '../assets/auction.jpg';
 import proj5 from '../assets/blog.jpg';
 import { Link } from 'react-router-dom';
 
-
-
 function Project() {
 
   return (
