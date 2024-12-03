@@ -31,7 +31,7 @@ function Project() {
             src={proj4}
             alt="Project 4 Loading"
           /></Link>
-          <Link to='https://freedom-blogs-wine.vercel.app/'><img
+          <Link to='https://freedom-blog-puce.vercel.app/'><img
             className="w-60 h-60 md:w-96 md:h-96 rounded-lg shadow-lg hover:scale-110 transition duration-1000"
             src={proj5}
             alt="Project 5 Loading"
