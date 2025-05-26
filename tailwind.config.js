@@ -2,14 +2,14 @@
 export default {
   content: [
     './index.html',
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        customBlue: 'rgb(1, 59, 82)', // Add your custom color here
+        customBlue: 'rgb(1, 59, 82)',
       },
     },
   },
-  plugins: [],
-};
+  plugins: [require('@tailwindcss/line-clamp')],
+}
