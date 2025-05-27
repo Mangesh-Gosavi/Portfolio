@@ -12,7 +12,7 @@ function ProjectDetails() {
       <div className="bg-white text-black rounded-lg p-10">
         <h1 className="text-3xl font-bold mb-4">Project Name: {project.title}</h1>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center border rounded-lg mb-4">
           <img
             src={project.imageUrl}
             alt={project.title}
