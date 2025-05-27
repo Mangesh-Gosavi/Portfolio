@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Projects() {
   const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true); // NEW: loading state
+  const [loading, setLoading] = useState(true); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -15,7 +15,7 @@ function Projects() {
       } catch (error) {
         console.error('Failed to fetch projects:', error);
       } finally {
-        setLoading(false); // done loading whether success or fail
+        setLoading(false); 
       }
     };
 
@@ -36,19 +36,21 @@ function Projects() {
           {projects.map((project) => (
             <div
               key={project._id}
-              className="bg-white text-black rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col overflow-hidden mt-4"
+              className="bg-white text-black p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col overflow-hidden mt-4"
             >
               <img
                 src={project.imageUrl}
                 alt={project.title}
-                className="h-24 w-full object-contain rounded-lg"
+                className="h-24 w-full object-contain rounded-lg border"
               />
 
-              <div className="p-5 flex flex-col flex-grow">
-                <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-                <p className="text-gray-700 mb-4 clamp-text">
-                  {project.description}
-                </p>
+              <div className="p-5 flex justify-between h-full flex-col">
+                <div className='h-full'>
+                  <h2 className="text-xl font-bold mb-2">{project.title}</h2>
+                  <p className="text-gray-700 mb-4 clamp-text">
+                    {project.description}
+                  </p>
+                </div>
 
                 <button
                   onClick={() => navigate(`/projectdetails/${project._id}`, { state: { project } })}
