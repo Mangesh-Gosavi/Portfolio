@@ -16,7 +16,7 @@ function ProjectDetails() {
           <img
             src={project.imageUrl}
             alt={project.title}
-            className="w-full max-w-xl rounded mb-6"
+            className="w-full max-w-xl rounded-lg mb-6"
           />
         </div>
 
