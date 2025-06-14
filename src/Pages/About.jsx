@@ -33,7 +33,7 @@ function About() {
           I’m passionate about programming, user interfaces, and clean design. I'm also expanding my skillset in data analytics, exploring tools like Python, Pandas, Power BI, and Excel to derive insights and solve real-world problems through data.
         </p>
         <p className="text-sm leading-6 mt-4">
-          Outside of tech, I was a national-level handball player—an experience that taught me resilience and teamwork. Currently, I’m working on a MERN project and diving deeper into machine learning and automation.
+          Outside of tech, I was a national-level sports player in Handball. Currently, I'm working on a MERN project and diving into data analytics and machine learning to solve real-world problems and automate workflows.
         </p>
 
         <div className="mt-6">
