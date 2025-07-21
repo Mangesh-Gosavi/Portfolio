@@ -1,29 +1,29 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./Pages/Header";
+import About from "./Pages/About";
+import Skill from './Pages/Skill';
+import Project from './Pages/Project';
+import Contact from './Pages/Contact';
+import ProjectDetails from "./components/ProjectDetails";
 
-import App from "./App.jsx"; // acts as layout
-import Header from "./Pages/Header.jsx";
-import About from "./Pages/About.jsx";
-import Skill from './Pages/Skill.jsx';
-import Project from './Pages/Project.jsx';
-import Contact from './Pages/Contact.jsx';
-import ProjectDetails from "./components/ProjectDetails.jsx";
+function App() {
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      // App contains the <Header /> and layout
-      <App />
-    ),
-    children: [
-      { path: "/", element: <About /> },
-      { path: "/Skill", element: <Skill /> },
-      { path: "/Project", element: <Project /> },
-      { path: "/projectdetails/:id", element: <ProjectDetails /> },
-      { path: "/Contact", element: <Contact /> },
-    ],
-  },
-]);
+  return (
+    <>
+      <BrowserRouter>
+      <div className=" h-20 bg-blue-950 w-full">
+        <Header />
+        <Routes>
+          <Route path="/" element={<About/>}/>
+          <Route path="/Skill" element={<Skill/>}/>
+          <Route path="/Project" element={<Project/>}/>
+          <Route path="/projectdetails/:id" element={<ProjectDetails />} />
+          <Route path="/Contact" element={<Contact/>}/>         
+        </Routes>
+        </div>
+      </BrowserRouter>
+    </>
+  );
+}
 
+export default App;
