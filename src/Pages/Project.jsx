@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import API_URL from '../config';
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -9,7 +10,7 @@ function Projects() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch('https://portfolioserver-1yf2.onrender.com/projects');
+        const response = await fetch(`${API_URL}/projects`);
         const data = await response.json();
         setProjects(data);
       } catch (error) {

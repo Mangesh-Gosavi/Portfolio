@@ -41,8 +41,8 @@ function Skill() {
         </div>
 
         <div className="bg-yellow-500 text-gray-900 p-6 rounded-lg shadow-lg shadow-slate-600 max-w-xl hover:scale-110 transition duration-1000">
-          <h3 className="text-sm md:text-xl font-bold mb-4">Data Tool</h3>
-          <p className="text-sm leading-6">Power BI, Excel</p>
+          <h3 className="text-sm md:text-xl font-bold mb-4">Tools</h3>
+          <p className="text-sm leading-6">Git, Figma, Postman</p>
         </div>
 
         <div className="bg-green-500 text-gray-900 p-6 rounded-lg shadow-lg shadow-slate-600 max-w-xl hover:scale-110 transition duration-1000">
