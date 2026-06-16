@@ -29,8 +29,7 @@ function Projects() {
 
       {loading ? (
         <div className="flex justify-center items-center h-64">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-white border-opacity-50"></div>
-          <span className="ml-4 text-lg">Loading projects...</span>
+          <span className="ml-9 text-lg">Loading projects...</span>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
